@@ -24,25 +24,16 @@ Large: 1.8
 
 -- 02 COLORS
 
--- Primary: #e67e22
+-- Primary: 
 
 -- Tints: 
-#fdf2e9
-#fae5d3
-#eb984e
 
 -- Shades: 
-#cf711f
-#45260a
 
 -- Accents:
 
 -- Greys: 
-#888
-#767676 (Lightest grey allowed on white)
-#6f6f6f (Lightest grey allowed on #fdf2e9)
-#555
-#333
+
 
 -- 05 SHADOWS
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.75);
@@ -69,6 +60,12 @@ Medium: 11px
   --color-primary: #2563eb;
 }
 
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -93,6 +90,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--color-primary);
 
   /* Because we want the header to be sticky later */
   height: 9.6rem;
@@ -108,7 +106,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 2rem;
 }
 
 .main-nav-link:link,
@@ -117,27 +115,56 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.8rem;
+  /* text-transform: uppercase; */
   transition: all 0.3s;
   color: #fff;
   background-color: var(--color-primary);
-  padding: 1.2rem;
-  border: 2px solid --color-primary;
-  border-radius: 9rem;
+  padding: 1rem;
+  /* border: 2px solid var(--color-primary); */
+  /* border-radius: 9rem; */
+  /* width: fit-content; */
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: var(--color-primary);
-  border-radius: 9rem;
-  border: 2px solid var(--color-primary);
+  /* color: var(--color-primary); */
+  /* border-radius: 9rem; */
+  /* border: 2px solid var(--color-primary); */
+  /* background-color: #fff; */
+  /* padding: 1.2rem; */
+  border-bottom: 2px solid #fff;
+}
+
+.header-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-btn {
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 1.2rem;
   background-color: #fff;
-  padding: 1.2rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.cta-btn--bg {
+  color: #fff;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  transform: scale(20);
 }
 
 .heading-primary {
   font-family: "Young Serif", sans-serif;
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.business-focus {
+  font-size: 5.2;
 }
 
 .btn,
@@ -202,12 +229,9 @@ body {
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
+  color: #fff;
 }
 
 .hero-vid {
   width: 100%;
-}
-
-.ion-icon {
-  font-size: 300px;
 }
