@@ -169,7 +169,7 @@ body {
   color: #ddd;
 }
 
-#business-focus {
+.business-focus {
   /* font-size: 4.4rem; */
   color: #000;
   text-shadow: 0 0 12px rgba(148, 179, 245, 0.7);
@@ -378,4 +378,101 @@ ion-icon {
 
 .step-img {
   width: 127%;
+}
+
+/* Price section */
+.section-pricing {
+  background-image: linear-gradient(rgba(148, 179, 245, 0.7), #000);
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.price-top {
+  margin-bottom: 1.6rem;
+  display: block;
+  text-align: center;
+}
+
+.price-header {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.price-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  padding: 1rem;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  color: #ddd;
+}
+
+.price-type {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(to bottom, transparent, #ddd);
+  color: #000;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+}
+
+.price-duration {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.price-value {
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+.plan-select {
+  text-align: center;
+  margin-top: 4.8rem;
+  /* margin-bottom: 1.6rem; */
+}
+
+.price-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.price-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.price-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.number-meeting {
+  color: #000;
+}
+
+.card-standard {
+  background-color: var(--color-primary);
+}
+
+.btn--full.btn-standard {
+  color: var(--color-primary);
+  background-color: #ddd;
+  border: 2px solid var(--color-primary);
 }
